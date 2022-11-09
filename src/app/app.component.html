@@ -1,2 +1,5 @@
-<app-card *ngIf="isALiveCard"></app-card>
+<app-card *ngIf="isALiveCard; else anotherBlock"></app-card>
+<ng-template #anotherBlock>
+  <p>Olá sou bloco secreto</p>
+</ng-template>
 <router-outlet></router-outlet>
