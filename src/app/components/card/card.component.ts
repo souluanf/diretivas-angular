@@ -23,4 +23,9 @@ export class CardComponent implements OnInit {
   adicionar() {
     this.products.push("luan")
   }
+
+  remover(index: number) {
+    alert(index)
+    this.products.splice(index,1)
+  }
 }
